@@ -43,16 +43,14 @@ var linep10 = $(".linep10");
 var linep11 = $(".linep11");
 var linep12 = $(".linep12");
 var cube1 = $("#five");
-var cube2 = $('#four');
+var cube2 = $("#four");
 var cube3 = $("#three");
-var cube4 = $('#two');
+var cube4 = $("#two");
 var cube5 = $("#one");
-var cube6 = $('#six');
+var cube6 = $("#six");
 var cube7 = $("#seven");
 
-
-
-function drawline(line,start,end,a,b,c,d) {
+function drawline(line, start, end, a, b, c, d) {
   var posax = start.position().left - a;
   var posay = start.position().top - b;
 
@@ -76,9 +74,8 @@ function drawline(line,start,end,a,b,c,d) {
   line.css("top", centery - line.height() / 2 + start.height() / 2);
   line.css("left", centerx - line.width() / 2 + start.width() / 2);
 }
-
-setInterval(function () {
-  if(window.innerWidth > 800){
+if (window.innerWidth > 800) {
+  setInterval(function () {
     x += xh;
     y += yh;
     pac.style.top = y + "px";
@@ -94,7 +91,7 @@ setInterval(function () {
     metroy += metroyh;
     metro.style.top = metroy + "px";
     metro.style.left = metrox + "px";
-    
+
     if (metrox + metroxh > 710 || metrox + metroxh < -20) {
       metroxh = -metroxh;
     }
@@ -123,24 +120,24 @@ setInterval(function () {
     if (porty + portyh > 300 || porty + portyh < -220) {
       portyh = -portyh;
     }
-  }
-  drawline(line,start,end,20,30,20,20);
-  drawline(line2,start,start2,20,30,20,20);
-  drawline(line3,start2,end,20,30,20,20);
-  drawline(line4,start3,end,20,30,20,20);
-  drawline(line5,start,start3,20,30,20,20);
-  drawline(line6,start2,start3,20,30,20,20);
-  drawline(linep,cube1,cube2,0,0,0,10);
-  drawline(linep1,cube1,cube4,0,0,0,10);
-  drawline(linep2,cube2,cube3,0,0,0,10);
-  drawline(linep3,cube7,cube3,0,0,0,30);
-  drawline(linep4,cube3,cube5,0,0,0,10);
-  drawline(linep5,cube3,cube4,0,0,0,10);
-  drawline(linep6,cube1,cube6,0,0,0,10);
-  drawline(linep7,cube7,cube6,0,0,0,10);
-  drawline(linep8,cube7,cube5,0,0,0,10);
-  drawline(linep9,cube2,cube6,0,0,0,0);
-  drawline(linep10,cube5,cube6,0,0,0,0);
-  drawline(linep11,cube5,cube1,0,0,0,-20);
-  drawline(linep12,cube5,cube4,0,5,0,10);
-}, 10);
+    drawline(line, start, end, 20, 30, 20, 20);
+    drawline(line2, start, start2, 20, 30, 20, 20);
+    drawline(line3, start2, end, 20, 30, 20, 20);
+    drawline(line4, start3, end, 20, 30, 20, 20);
+    drawline(line5, start, start3, 20, 30, 20, 20);
+    drawline(line6, start2, start3, 20, 30, 20, 20);
+    drawline(linep, cube1, cube2, 0, 0, 0, 10);
+    drawline(linep1, cube1, cube4, 0, 0, 0, 10);
+    drawline(linep2, cube2, cube3, 0, 0, 0, 10);
+    drawline(linep3, cube7, cube3, 0, 0, 0, 30);
+    drawline(linep4, cube3, cube5, 0, 0, 0, 10);
+    drawline(linep5, cube3, cube4, 0, 0, 0, 10);
+    drawline(linep6, cube1, cube6, 0, 0, 0, 10);
+    drawline(linep7, cube7, cube6, 0, 0, 0, 10);
+    drawline(linep8, cube7, cube5, 0, 0, 0, 10);
+    drawline(linep9, cube2, cube6, 0, 0, 0, 0);
+    drawline(linep10, cube5, cube6, 0, 0, 0, 0);
+    drawline(linep11, cube5, cube1, 0, 0, 0, -20);
+    drawline(linep12, cube5, cube4, 0, 5, 0, 10);
+  }, 10);
+}
