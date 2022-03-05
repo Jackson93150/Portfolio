@@ -13,15 +13,17 @@ body
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     color: white;
     background-image: url("./src/back.png");
     background-position: top;
+    overflow-x: hidden;
 }
 
 .container
 {
     position: relative;
+    width:auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +57,13 @@ body
     
 }
 
-.container .card .card2
+.card2
 {
-    position: relative;
+    position: absolute;
     width: 545px;
     height: 200px;
-    top: -30px;
-    left: 143px;
+    top: 60px;
+    left: 310px;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background: rgba(0, 03, 0, 0.5);
@@ -95,12 +97,19 @@ body
     text-shadow: 0 0 20px #0CF25D;
 
 }
-.container .card .content p
+
+.bloc
 {
     position: absolute;
-    transform: scale(1.4);
-    top: 110px;
-    left: 400px;
+    width: 535px;
+    height: 200px;
+    top: 80px;
+    left: 320px;
+}
+
+.bloc p
+{
+    font-size: 22px;
 }
 
 #git
@@ -454,4 +463,165 @@ body
 {
     background:linear-gradient(#28962b,#1a5011);
     border-radius:105px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #eight
+    {
+        width: 90%;
+    }
+
+    #nine
+    {
+        width: 90%;
+        
+    }
+    .parallax
+    {
+        width: 90%;
+        
+    }
+
+    .container .card
+    {
+        width: 700px;
+    }
+
+    .container .card .card2
+    {
+        width: 60%;
+        left: 250px;
+    }
+
+    .bloc
+    {
+        width: 55%;
+        left: 280px;
+    }
+
+    .bloc p
+    {
+        font-size: 20px;
+    }
+    .container .card .imgBx
+    {
+        width: 80%;
+        left: -115px;
+    }
+
+    .container .card .content h2
+    {
+        width: 30%;
+        left: 40px;
+    }
+
+    .container .card .content h3
+    {
+        width: 30%;
+        left: 40px;
+        top: 300px;
+    }
+
+    #mail
+    {
+        left: 300px;
+    }
+
+    #ld
+    {
+        left: 420px;
+    }
+
+    #git
+    {
+        left: 540px;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .container .card
+    {
+        width: 300px;
+        height: 700px;
+    }
+
+    .container .card .imgBx
+    {
+        left: -15px;
+        top: -100px;
+    }
+    .container .card .content h2
+    {
+        font-size: 20px;
+        left: 80px;
+        top: 200px;
+    }
+    .container .card .content h3
+    {
+        font-size: 15px;
+        left: 80px;
+        top: 250px;
+    }
+
+    .container .card .card2
+    {
+        width: 60%;
+        height: 55%;
+        left: 30px;
+        top: 280px;
+    }
+
+    .bloc
+    {
+        width: 55%;
+        left: 40px;
+        top: 290px;
+    }
+
+    #mail
+    {
+        left: 205px;
+        top: 300px;
+    }
+
+    #ld
+    {
+        left: 205px;
+        top: 420px;
+    }
+
+    #git
+    {
+        left: 205px;
+        top: 540px;
+    }
+
+    .container .content2 .logometro
+    {
+        transform: scale(1);
+        top: -50px;
+        left: 350px;
+    }
+    .container .content2 .logoretro
+    {
+        transform: scale(1);
+        top: -120px;
+        left: 350px;
+    }
+
+    .container .content2 .logoport
+    {
+        transform: scale(1);
+        top: 120px;
+        left: 350px;
+    }
+
+    .container .content2 .logopac
+    {
+        transform: scale(1);
+        top: 470px;
+        left: 350px;
+    }
 }

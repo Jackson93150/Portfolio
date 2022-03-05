@@ -78,48 +78,51 @@ function drawline(line,start,end,a,b,c,d) {
 }
 
 setInterval(function () {
-  x += xh;
-  y += yh;
-  pac.style.top = y + "px";
-  pac.style.left = x + "px";
-  if (x + xh > 720 || x + xh < -25) {
-    xh = -xh;
-  }
-  if (y + yh > 520 || y + yh < -25) {
-    yh = -yh;
-  }
+  if(window.innerWidth > 800){
+    x += xh;
+    y += yh;
+    pac.style.top = y + "px";
+    pac.style.left = x + "px";
+    if (x + xh > 720 || x + xh < -25) {
+      xh = -xh;
+    }
+    if (y + yh > 520 || y + yh < -25) {
+      yh = -yh;
+    }
 
-  metrox += metroxh;
-  metroy += metroyh;
-  metro.style.top = metroy + "px";
-  metro.style.left = metrox + "px";
-  if (metrox + metroxh > 710 || metrox + metroxh < -20) {
-    metroxh = -metroxh;
-  }
-  if (metroy + metroyh > 410 || metroy + metroyh < -120) {
-    metroyh = -metroyh;
-  }
+    metrox += metroxh;
+    metroy += metroyh;
+    metro.style.top = metroy + "px";
+    metro.style.left = metrox + "px";
+    
+    if (metrox + metroxh > 710 || metrox + metroxh < -20) {
+      metroxh = -metroxh;
+    }
+    if (metroy + metroyh > 410 || metroy + metroyh < -120) {
+      metroyh = -metroyh;
+    }
 
-  retrox += retroxh;
-  retroy += retroyh;
-  retro.style.top = retroy + "px";
-  retro.style.left = retrox + "px";
-  if (retrox + retroxh > 710 || retrox + retroxh < -10) {
-    retroxh = -retroxh;
-  }
-  if (retroy + retroyh > 200 || retroy + retroyh < -320) {
-    retroyh = -retroyh;
-  }
+    retrox += retroxh;
+    retroy += retroyh;
+    retro.style.top = retroy + "px";
+    retro.style.left = retrox + "px";
+    if (retrox + retroxh > 710 || retrox + retroxh < -10) {
+      retroxh = -retroxh;
+    }
+    if (retroy + retroyh > 200 || retroy + retroyh < -320) {
+      retroyh = -retroyh;
+    }
 
-  portx += portxh;
-  porty += portyh;
-  port.style.top = porty + "px";
-  port.style.left = portx + "px";
-  if (portx + portxh > 710 || portx + portxh < -10) {
-    portxh = -portxh;
-  }
-  if (porty + portyh > 300 || porty + portyh < -220) {
-    portyh = -portyh;
+    portx += portxh;
+    porty += portyh;
+    port.style.top = porty + "px";
+    port.style.left = portx + "px";
+    if (portx + portxh > 710 || portx + portxh < -10) {
+      portxh = -portxh;
+    }
+    if (porty + portyh > 300 || porty + portyh < -220) {
+      portyh = -portyh;
+    }
   }
   drawline(line,start,end,20,30,20,20);
   drawline(line2,start,start2,20,30,20,20);
