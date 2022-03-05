@@ -1,0 +1,457 @@
+@font-face { font-family: Codystar; src: url('src/Codystar-Regular.ttf'); } 
+@font-face { font-family: Rajdhani; src: url('src/rajdhani.regular.ttf'); } 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    max-width: 100%;
+    color: white;
+    background-image: url("./src/back.png");
+    background-position: top;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+.container .card
+{
+    position: relative;
+    width: 880px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.container .card:hover
+{
+    box-shadow: 1px 1px 15px rgba(31, 214, 24, 0.1);
+    
+}
+
+.container .card .card2
+{
+    position: relative;
+    width: 545px;
+    height: 200px;
+    top: -30px;
+    left: 143px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(0, 03, 0, 0.5);
+    overflow: hidden;
+    border-top: 1px solid rgba(111, 245, 22, 0.1);
+    border-left: 1px solid rgba(111, 245, 22, 0.1);
+    border-right: 1px solid rgba(111, 245, 22, 0.1);
+    backdrop-filter: blur(1px);
+}
+
+.container .card .imgBx
+{
+    position: absolute;
+    transform: scale(0.5);
+    top: -60px;
+    left: -70px;
+}
+.container .card .content h2
+{
+    position: absolute;
+    transform: scale(0.9);
+    top: 240px;
+    left: 0px;
+}
+.container .card .content h3
+{
+    position: absolute;
+    transform: scale(0.9);
+    top: 270px;
+    left: 70px;
+    text-shadow: 0 0 20px #0CF25D;
+
+}
+.container .card .content p
+{
+    position: absolute;
+    transform: scale(1.4);
+    top: 110px;
+    left: 400px;
+}
+
+#git
+{
+    position: absolute;
+    transform: scale(0.8);
+    left: 700px;
+    top: 280px;
+    transition: 1s;
+}
+
+#git:hover
+{
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+
+#ld
+{
+    position: absolute;
+    transform: scale(0.8);
+    left: 550px;
+    top: 280px;
+    transition: 1s;
+}
+
+#ld:hover
+{
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+
+#mail
+{
+    position: absolute;
+    transform: scale(0.8);
+    left: 400px;
+    top: 280px;
+    transition: 1s;
+}
+
+#mail:hover
+{
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+
+.container .content2
+{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 700px;
+}
+
+.linep
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep1
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep2
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep3
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep4
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep5
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep6
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+
+.linep7
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep8
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep9
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep10
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep11
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.linep12
+{
+    background-color:#4e9443;
+    height:0.1px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .line
+{
+    background-color:#87ff75;
+    height:1.5px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .line2
+{
+    background-color:#87ff75;
+    height:1.5px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .line3
+{
+    background-color:#87ff75;
+    height:2px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .line4
+{
+    background-color:#87ff75;
+    height:2px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .line5
+{
+    background-color:#87ff75;
+    height:1.5px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .line6
+{
+    background-color:#87ff75;
+    height:3px;
+    position:absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+}
+
+.container .content2 .logo1
+{
+    height: 100px;
+    width: 100px;
+}
+
+.container .content2 .logopac
+{
+    position: relative;
+    transform: scale(0.5);
+    top: 50px;
+}
+
+.container .content2 .logopac:hover
+{
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+
+.container .content2 .logometro
+{
+    position: relative;
+    transform: scale(0.7);
+    top: 250px;
+    left: 300px;
+}
+
+.container .content2 .logometro:hover
+{
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+
+.container .content2 .logoretro
+{
+    position: relative;
+    transform: scale(0.9);
+    top: -250px;
+    left: 550px;
+    
+}
+
+.container .content2 .logoretro:hover
+{
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+
+.container .content2 .logoport
+{
+    position: relative;
+    transform: scale(0.8);
+    top: 100px;
+    left: 380px;
+}
+
+.container .content2 .logoport:hover
+{
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 216, 30));
+    transition: 1s;
+}
+.parallax
+{
+    position: absolute;
+}
+
+#seven
+{
+    position: relative;
+    left: 300px;
+    top: -300px;
+}
+
+#six
+{
+    position: relative;
+    left: -1300px;
+    top: -400px;
+}
+
+#five
+{
+    position: relative;
+    left: -950px;
+    top: 200px;
+    
+}
+
+#four
+{
+    position: relative;
+    left: -350px;
+    top: -400px;
+}
+
+#three
+{
+    position: relative;
+    left: 600px;
+    top: -300px;
+}
+
+#two
+{
+    position: relative;
+    left: 500px;
+}
+
+#one
+{
+    position: relative;
+    left: 1100px;
+    top: 300px;
+}
+
+#eight
+{
+    position: absolute;
+}
+
+#nine
+{
+    position: absolute;
+    top: -500px;
+    left: 200px;
+}
+
+::-webkit-scrollbar
+{
+    width:10px;
+    height: 10px;
+    background-color: #03160a;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background:linear-gradient(#28962b,#1a5011);
+    border-radius:105px;
+}
