@@ -80,6 +80,7 @@ body
     transform: scale(0.5);
     top: -60px;
     left: -70px;
+    user-select: none;
 }
 .container .card .content h2
 {
@@ -119,6 +120,7 @@ body
     left: 700px;
     top: 280px;
     transition: 1s;
+    user-select: none;
 }
 
 #git:hover
@@ -135,6 +137,7 @@ body
     left: 550px;
     top: 280px;
     transition: 1s;
+    user-select: none;
 }
 
 #ld:hover
@@ -151,6 +154,7 @@ body
     left: 400px;
     top: 280px;
     transition: 1s;
+    user-select: none;
 }
 
 #mail:hover
@@ -166,6 +170,7 @@ body
     width: 800px;
     height: 600px;
     top: 700px;
+    user-select: none;
 }
 
 .linep
@@ -389,6 +394,7 @@ body
 .parallax
 {
     position: absolute;
+    user-select: none;
 }
 
 #seven
