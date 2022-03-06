@@ -624,4 +624,17 @@ body
         top: 470px;
         left: 350px;
     }
+
+    html, body 
+    {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .parallax{
+        display: none;
+    }
 }

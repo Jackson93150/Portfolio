@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="src/logow.png" />
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="jquery-3.6.0.js"></script>
   </head>
   <body>
     <div class="parallax">
-      <img src="./src/cercle.png" class="layer" data-value="2" id="eight">
-      <img src="./src/lens.png" class="layer" data-value="-1" id="nine">
+      <img src="./src/cercle.png" class="layer" data-value="2" id="eight" />
+      <img src="./src/lens.png" class="layer" data-value="-1" id="nine" />
       <div class="linep"></div>
       <div class="linep1"></div>
       <div class="linep2"></div>
@@ -25,13 +25,13 @@
       <div class="linep10"></div>
       <div class="linep11"></div>
       <div class="linep12"></div>
-      <img src="./src/moyenc4.png" class="layer" data-value="-2" id="one">
-      <img src="./src/moyenc3.png" class="layer" data-value="1" id="two">
-      <img src="./src/moyenc2.png" class="layer" data-value="3" id="three">
-      <img src="./src/moyenc1.png" class="layer" data-value="4" id="four">
-      <img src="./src/grandc.png" class="layer" data-value="7" id="five">
-      <img src="./src/moyenc5.png" class="layer" data-value="-4" id="six">
-      <img src="./src/moyenc6.png" class="layer" data-value="-6" id="seven">
+      <img src="./src/moyenc4.png" class="layer" data-value="-2" id="one" />
+      <img src="./src/moyenc3.png" class="layer" data-value="1" id="two" />
+      <img src="./src/moyenc2.png" class="layer" data-value="3" id="three" />
+      <img src="./src/moyenc1.png" class="layer" data-value="4" id="four" />
+      <img src="./src/grandc.png" class="layer" data-value="7" id="five" />
+      <img src="./src/moyenc5.png" class="layer" data-value="-4" id="six" />
+      <img src="./src/moyenc6.png" class="layer" data-value="-6" id="seven" />
     </div>
     <div class="container">
       <div class="content2">
@@ -41,14 +41,17 @@
         <div class="line4"></div>
         <div class="line5"></div>
         <div class="line6"></div>
-        
+
         <div class="logo1">
           <div id="pac" class="logopac"><img src="./src/paclogo.png" /></div>
-          <div id="metro" class="logometro"><img src="./src/logometro.png" /></div>
+          <div id="metro" class="logometro">
+            <img src="./src/logometro.png" />
+          </div>
           <div id="port" class="logoport"><img src="./src/logoport.png" /></div>
-          <div id="retro" class="logoretro"><img src="./src/logoretro.png" /></div>
+          <div id="retro" class="logoretro">
+            <img src="./src/logoretro.png" />
+          </div>
         </div>
-        
       </div>
       <div class="card">
         <div class="content">
@@ -57,24 +60,22 @@
             <h2 style="font-family: Roboto">ANTHONIPILLAI JACKSON</h2>
             <h3 style="font-family: Codystar">Développeur</h3>
             <div class="card2"></div>
-              <div class="bloc">
-                <p style="font-family: Rajdhani">
-                  Bonjour, je m'appelle Jackson j'ai 20 ans et je suis un
-                  développeur junior en 3e année de licence informatique à
-                  l'université Paris 8.<br />
-                  Voici mon portfolio où vous trouverez les projets que j'ai
-                  pu réaliser durant ma licence.<br />Vous pouvez trouver
-                  ci-dessous plus d'informations à propos de moi et la liste
-                  de mes projets.
-                </p>
-              </div>
-            <img src="./src/gitlogo.png" id="git">
-            <img src="./src/ldlogo.png" id="ld">
-            <img src="./src/mail.png" id="mail">
+            <div class="bloc">
+              <p style="font-family: Rajdhani">
+                Bonjour, je m'appelle Jackson j'ai 20 ans et je suis un
+                développeur junior en 3e année de licence informatique à
+                l'université Paris 8.<br />
+                Voici mon portfolio où vous trouverez les projets que j'ai pu
+                réaliser durant ma licence.<br />Vous pouvez trouver ci-dessous
+                plus d'informations à propos de moi et la liste de mes projets.
+              </p>
+            </div>
+            <img src="./src/gitlogo.png" id="git" />
+            <img src="./src/ldlogo.png" id="ld" />
+            <img src="./src/mail.png" id="mail" />
           </div>
         </div>
       </div>
-      
     </div>
     <script type="text/javascript" src="./src/vanilla-tilt.js"></script>
     <script>
@@ -86,51 +87,46 @@
     <script src="bounce.js"></script>
     <script>
       document.addEventListener("mousemove", parallax);
-      function parallax(e){
-        document.querySelectorAll(".layer").forEach(layer =>{
+      function parallax(e) {
+        document.querySelectorAll(".layer").forEach((layer) => {
           const speed = layer.getAttribute("data-value");
-          const x = (window.innerWidth -  e.clientX*speed)/100;
-          const y = (window.innerHeight - e.clientY*speed)/100;
+          const x = (window.innerWidth - e.clientX * speed) / 100;
+          const y = (window.innerHeight - e.clientY * speed) / 100;
 
-          layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
       }
     </script>
     <script>
-      document.getElementById("pac").onclick = 
-      function(){
+      document.getElementById("pac").onclick = function () {
         window.open("https://github.com/Jackson93150/PacmanFps-");
-      }
+      };
 
-      document.getElementById("metro").onclick = 
-      function(){
+      document.getElementById("metro").onclick = function () {
         window.open("https://github.com/Jackson93150/London_Dijkstra");
-      }
+      };
 
-      document.getElementById("retro").onclick = 
-      function(){
+      document.getElementById("retro").onclick = function () {
         window.open("https://github.com/Jackson93150/JsGame");
-      }
+      };
 
-      document.getElementById("port").onclick = 
-      function(){
+      document.getElementById("port").onclick = function () {
         window.open("https://github.com/Jackson93150/Portfolio");
-      }
+      };
 
-      document.getElementById("git").onclick = 
-      function(){
+      document.getElementById("git").onclick = function () {
         window.open("https://github.com/Jackson93150");
-      }
+      };
 
-      document.getElementById("ld").onclick = 
-      function(){
-        window.open("https://www.linkedin.com/in/jackson-anthonipillai-20a88a227/");
-      }
+      document.getElementById("ld").onclick = function () {
+        window.open(
+          "https://www.linkedin.com/in/jackson-anthonipillai-20a88a227/"
+        );
+      };
 
-      document.getElementById("mail").onclick = 
-      function(){
+      document.getElementById("mail").onclick = function () {
         navigator.clipboard.writeText("anthonipillaijackson@gmail.com");
-      }
+      };
     </script>
   </body>
 </html>
