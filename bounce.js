@@ -74,8 +74,8 @@ function drawline(line, start, end, a, b, c, d) {
   line.css("top", centery - line.height() / 2 + start.height() / 2);
   line.css("left", centerx - line.width() / 2 + start.width() / 2);
 }
-if (window.innerWidth > 800) {
-  setInterval(function () {
+setInterval(function () {
+  if ($(window).width() > 800) {
     x += xh;
     y += yh;
     pac.style.top = y + "px";
@@ -139,5 +139,21 @@ if (window.innerWidth > 800) {
     drawline(linep10, cube5, cube6, 0, 0, 0, 0);
     drawline(linep11, cube5, cube1, 0, 0, 0, -20);
     drawline(linep12, cube5, cube4, 0, 5, 0, 10);
-  }, 10);
-}
+  }
+  else{
+    pac.style.left = 350 + "px";
+    retro.style.left = 350 + "px";
+    metro.style.left = 350 + "px";
+    port.style.left = 350 + "px";
+    pac.style.top = 470 + "px";
+    retro.style.top = -120 + "px";
+    metro.style.top = -50 + "px";
+    port.style.top = 120 + "px";
+    drawline(line, start, end, 0, 0, 0, 0);
+    drawline(line2, start, start2, 0, 0, 0, 0);
+    drawline(line3, start2, end, 0, 0, 0, 0);
+    drawline(line4, start3, end, 0, 0, 0, 0);
+    drawline(line5, start, start3, 0, 0, 0, 0);
+    drawline(line6, start2, start3, 0, 0, 0, 0);
+  }
+}, 10);
