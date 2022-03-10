@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="src/logow.png" />
+    <title>RetroRunner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="retrostyle.css" />
+    <script src="./src/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <video autoplay="autoplay" muted="" loop="infinite" class="back" src="./src/Background.mp4"></video>
+    <div class="container">
+        <img class="title" src="./src/title.png"></img>
+        <div class="box">
+          <p style="font-family: Rajdhani">
+            RetroRunner est un projet qui a été réaliser seul dans le cadre d'un projet en programmation de jeux video. <br />
+            C'est un jeu de type 2D shooter Horizontal en javascript et avec l'utilisation de canvas.
+            Le jeu est composé de 3 niveaux , dont le dernier est un combat de bose contre un personnage célèbre de l'animation japonaise "Dio Brando".
+          </p>
+        </div>
+        <div class="boxvid">
+          <video autoplay="autoplay" muted="" loop="infinite" src="./src/loading.mp4"></video>
+        </div>
+        <div class="box2">
+          <p style="font-family: Rajdhani">
+            Dans le 1er niveau il faudra affronter une horde d'ennemie tous en esquivant les projectiles tirer par celle-ci.<br /> 
+            Il est aussi possible d'utiliser une compétence spéciale pour figer les ennemies ce qui peut aider à esquiver plus facilement.
+          </p>
+        </div>
+        <div class="boxvid2">
+          <video autoplay="autoplay" muted="" loop="infinite" src="./src/level1.mp4"></video>
+        </div>
+        <div class="box3">
+          <p style="font-family: Rajdhani">
+            Dans le niveau 2 vous serez confronté à 2 machines qui vous tire dessus avec des rayons laser.
+            Votre but sera de les esquiver jusqu'à la téléportation du personnage au niveau 3.
+          </p>
+        </div>
+        <div class="boxvid3">
+          <video autoplay="autoplay" muted="" loop="infinite" src="./src/level2.mp4"></video>
+        </div>
+        <div class="box4">
+          <p style="font-family: Rajdhani">
+            Le dernier niveau est le combat contre Dio Brando. Dans ce niveau nous avons une nouvelle 
+            arme et il faudra battre le boss qui a 3 phases de combat.
+          </p>
+        </div>
+        <div class="boxvid4">
+          <video autoplay="autoplay" muted="" loop="infinite" src="./src/level3.mp4"></video>
+        </div>
+        <img src="./src/play.png" id="play" />
+    </div>
+    <script>
+      document.getElementById("play").onclick = function () {
+        window.open("https://jackson93150.github.io/JsGame/");
+      };
+    </script>
+    <script type="text/javascript" src="./src/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".title"), {
+        max: 2,
+        speed: 200,
+      });
+      VanillaTilt.init(document.querySelector(".box"), {
+        max: 1,
+        speed: 200,
+      });
+      VanillaTilt.init(document.querySelector(".box2"), {
+        max: 1,
+        speed: 200,
+      });
+      VanillaTilt.init(document.querySelector(".box3"), {
+        max: 1,
+        speed: 200,
+      });
+      VanillaTilt.init(document.querySelector(".box4"), {
+        max: 1,
+        speed: 200,
+      });
+    </script>
+    <script>
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".layer").forEach((layer) => {
+          const speed = layer.getAttribute("data-value");
+          const x = (window.innerWidth - e.clientX * speed) / 100;
+          const y = (window.innerHeight - e.clientY * speed) / 100;
+
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+      }
+    </script>
+  </body>
+</html>

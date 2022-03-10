@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="jquery-3.6.0.js"></script>
+    <script src="./src/jquery-3.6.0.js"></script>
   </head>
   <body>
     <div class="parallax">
@@ -55,7 +55,7 @@
       </div>
       <div class="card">
         <div class="content">
-          <div class="imgBx"><img src="pp.png" /></div>
+          <div class="imgBx"><img src="./src/pp.png" /></div>
           <div class="contentBx">
             <h2 style="font-family: Roboto">ANTHONIPILLAI JACKSON</h2>
             <h3 style="font-family: Codystar">Développeur</h3>
@@ -84,7 +84,7 @@
         speed: 200,
       });
     </script>
-    <script src="bounce.js"></script>
+    <script src="./src/bounce.js"></script>
     <script>
       document.addEventListener("mousemove", parallax);
       function parallax(e) {
@@ -107,7 +107,7 @@
       };
 
       document.getElementById("retro").onclick = function () {
-        window.open("https://github.com/Jackson93150/JsGame");
+        document.location.href="./page/retrorunner.html";
       };
 
       document.getElementById("port").onclick = function () {

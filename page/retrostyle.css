@@ -1,0 +1,502 @@
+@font-face { font-family: Rajdhani; src: url('src/rajdhani.regular.ttf'); } 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    background-position: top;
+    overflow-x: hidden;
+}
+
+.container
+{
+    position: center;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    user-select: none;
+
+}
+
+.box
+{
+    position: absolute;
+    width: 1000px;
+    height: 180px;
+    top: 200px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.box:hover
+{
+    box-shadow: 1px 1px 15px rgba(214, 24, 113, 0.2);
+    
+}
+
+.box2:hover
+{
+    box-shadow: 1px 1px 15px rgba(214, 24, 113, 0.2);
+    
+}
+
+.box3:hover
+{
+    box-shadow: 1px 1px 15px rgba(214, 24, 113, 0.2);
+    
+}
+
+.box4:hover
+{
+    box-shadow: 1px 1px 15px rgba(214, 24, 113, 0.2);
+    
+}
+
+.box p 
+{
+    margin: 20px;
+    font-size: 22px;
+}
+
+.title
+{
+    position: relative;
+    top: -50px;
+    user-select: none;
+}
+
+.boxvid
+{
+    position: absolute;
+    width: 910px;
+    height: 456px;
+    top: 430px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.boxvid video
+
+{
+    width: 910px;
+}
+
+.box2
+{
+    position: absolute;
+    width: 1000px;
+    height: 140px;
+    top: 950px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.box2 p 
+{
+    margin: 20px;
+    font-size: 22px;
+}
+
+.boxvid2
+{
+    position: absolute;
+    width: 910px;
+    height: 456px;
+    top: 1160px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.boxvid2 video
+
+{
+    width: 910px;
+}
+
+.box3
+{
+    position: absolute;
+    width: 1000px;
+    height: 120px;
+    top: 1680px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.box3 p 
+{
+    margin: 20px;
+    font-size: 22px;
+}
+
+.boxvid3
+{
+    position: absolute;
+    width: 910px;
+    height: 456px;
+    top: 1870px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.boxvid3 video
+
+{
+    width: 910px;
+}
+
+.box4
+{
+    position: absolute;
+    width: 1000px;
+    height: 120px;
+    top: 2400px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.box4 p 
+{
+    margin: 20px;
+    font-size: 22px;
+}
+
+.boxvid4
+{
+    position: absolute;
+    width: 910px;
+    height: 420px;
+    top: 2570px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.boxvid4 video
+
+{
+    width: 910px;
+}
+
+#play
+{
+    position: absolute;
+    transform: scale(1.2);
+    top: 3050px;
+    transition: 1s;
+    user-select: none;
+    padding-bottom: 30px;
+}
+
+#play:hover
+{
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 0.75rem rgb(216, 20, 85));
+    transition: 1s;
+}
+
+.back
+{
+    position: absolute;
+    top: 0px;
+    height: 3200px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+::-webkit-scrollbar
+{
+    width:10px;
+    height: 10px;
+    background-color: #100316;
+}
+
+::-webkit-scrollbar-thumb
+{    background:linear-gradient(#802896,#501129);
+    border-radius:105px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .box{
+        width: 700px;
+        height: 200px;
+    }
+
+    .boxvid
+    {
+        width: 700px;
+        height: 350px;
+    }
+
+    .boxvid video
+    {
+        width: 700px;
+    }
+
+    .box2{
+        width: 700px;
+        height: 150px;
+        top: 810px;
+    }
+
+    .boxvid2
+    {
+        width: 700px;
+        height: 350px;
+        top: 990px;
+    }
+
+    .boxvid2 video
+    {
+        width: 700px;
+    }
+
+    .box3{
+        width: 700px;
+        height: 150px;
+        top: 1370px;
+    }
+
+    .boxvid3
+    {
+        width: 700px;
+        height: 350px;
+        top: 1550px;
+    }
+
+    .boxvid3 video
+    {
+        width: 700px;
+    }
+
+    .box4{
+        width: 700px;
+        height: 150px;
+        top: 1930px;
+    }
+
+    .boxvid4
+    {
+        width: 700px;
+        height: 320px;
+        top: 2110px;
+    }
+
+    .boxvid4 video
+    {
+        width: 700px;
+    }
+
+    #play
+    {
+        position: absolute;
+        top: 2500px;
+    }
+
+    .back
+    {
+        height: 2650px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .title
+    {
+        width: 350px;
+    }
+
+    .box{
+        width: 360px;
+        height: 220px;
+        top: 100px;
+    }
+
+    .box p{
+        font-size: 18px;
+    }
+
+    .boxvid
+    {
+        width: 360px;
+        height: 180px;
+        top: 370px;
+    }
+
+    .boxvid video
+    {
+        width: 360px;
+    }
+
+    .box2{
+        width: 360px;
+        height: 150px;
+        top: 600px;
+    }
+
+    .box2 p{
+        font-size: 18px;
+    }
+
+    .boxvid2
+    {
+        width: 360px;
+        height: 180px;
+        top: 800px;
+    }
+
+    .boxvid2 video
+    {
+        width: 360px;
+    }
+
+    .box3{
+        width: 360px;
+        height: 150px;
+        top: 1030px;
+    }
+
+    .box3 p{
+        font-size: 18px;
+    }
+
+    .boxvid3
+    {
+        width: 360px;
+        height: 180px;
+        top: 1230px;
+    }
+
+    .boxvid3 video
+    {
+        width: 360px;
+    }
+
+    .box4{
+        width: 360px;
+        height: 150px;
+        top: 1460px;
+    }
+
+    .box4 p{
+        font-size: 18px;
+    }
+
+    .boxvid4
+    {
+        width: 360px;
+        height: 170px;
+        top: 1660px;
+    }
+
+    .boxvid4 video
+    {
+        width: 360px;
+    }
+
+    #play
+    {
+        top: 1900px;
+    }
+
+    .back
+    {
+        height: 2050px;
+    }
+}
