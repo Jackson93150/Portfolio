@@ -9,6 +9,7 @@
     <script src="./src/jquery-3.6.0.js"></script>
   </head>
   <body>
+    <div id="preloader"></div>
     <div class="parallax">
       <img src="./src/cercle.png" class="layer" data-value="2" id="eight" />
       <img src="./src/lens.png" class="layer" data-value="-1" id="nine" />
@@ -127,6 +128,12 @@
       document.getElementById("mail").onclick = function () {
         navigator.clipboard.writeText("anthonipillaijackson@gmail.com");
       };
+    </script>
+    <script>
+      var preloader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        preloader.style.display = "none";
+      });
     </script>
   </body>
 </html>

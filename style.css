@@ -458,6 +458,15 @@ body
     left: 200px;
 }
 
+#preloader
+{
+    background: #000 url("src/loader.gif") no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 ::-webkit-scrollbar
 {
     width:10px;
