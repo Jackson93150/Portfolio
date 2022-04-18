@@ -9,6 +9,7 @@
     <script src="./src/jquery-3.6.0.js"></script>
   </head>
   <body>
+    <div id="preloader"></div>
     <video autoplay="autoplay" muted="" loop="infinite" class="back" src="./src/Background.mp4"></video>
     <div class="container">
         <img class="title" src="./src/title.png"></img>
@@ -90,6 +91,12 @@
           layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
       }
+    </script>
+    <script>
+      var preloader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        preloader.style.display = "none";
+      });
     </script>
   </body>
 </html>
